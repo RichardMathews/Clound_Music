@@ -1,0 +1,24 @@
+@keyframes backgroundAnimate{
+    0%{
+        background-position: 0 0, 0 0;
+    }
+    50%{
+        background-position: 50% 0%, 70% 0;
+    }
+    100%{
+        background-position: 100% 0, 100% 0;
+    }
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #248eff;
+    background-image: url('nuvem.png'), url('nuvem.png');
+    background-repeat: repeat-x, repeat-x;
+    animation: backgroundAnimate 20s linear infinite;
+}
+#music{
+    text-align: center;
+}
